@@ -68,6 +68,8 @@
     #header {
         position: relative;
         z-index: 1;
+        background-color: white;
+        
 
         .blog-container {
             padding: clamp(100px, 14vw, 200px) 0 clamp(50px, 11vw, 100px);
@@ -732,7 +734,7 @@
         font-family: "Roboto", "Arial", sans-serif;
         /* 60px - 100px top and bottom */
         padding: clamp(3.75em, 7.82vw, 6.25em) calc(16 / 16 * 1em);
-        background-color: #1a1a1a;
+        background-color: #ffffff;
 
         .cs-container {
             width: 100%;

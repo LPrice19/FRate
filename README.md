@@ -297,7 +297,7 @@ shouldn't need to worry about. While this project is set up to work with a blog 
 <a href="https://decapcms.org/docs/add-to-your-site/#configuration">Decap CMS'</a> documentation.
 
 Blog content lives in `/src/content/blog` in the form of markdown files, with a front matter similar to that of the pages. The blog post layout, tags and
-permalinks are defined in the `blog.json` file in the same directory, while all blog-related media lives in `src/assets/images/blog`.
+permalinks are defined in the `blog.json` file in the same directory, while all -related media lives in `src/assets/images/blog`.
 
 When `npm start` is run, a proxy server for the CMS is spun up on `localhost:8081`. That can often mean you run into errors if `localhost:8080` is already
 taken, so look out for that. You can locally access the blog via navigating to the /admin path. All blog content can be easily created, updated and deleted via
