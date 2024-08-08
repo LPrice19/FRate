@@ -5,14 +5,13 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #7b0000;
-    --primaryLight: #7b0000;
-    --secondary: #f9f9f9;
-    --secondaryLight: #ffffff;
-    --headerColor: #ffffff;
+    --primary: #830909;
+    --primaryLight: #830909;
+    --secondary: #001f3f;
+    --secondaryLight: #001f3f;
+    --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
-    --bodyTextColorBlack: #000000;
-    --bodyTextColorWhite: #ffffff;
+    --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -21,27 +20,8 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
-
-  #cs-container {
-    background-color: #000000;
-  }
-
-  .cs-topper1 {
-    display: block;
-    scale: 1.5;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    font-weight: 800;
-    color: var(--primary);
-    text-align: inherit;
-  }
-
   .cs-topper {
     display: block;
-    scale: 1.0;
     margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -62,10 +42,14 @@
     text-align: inherit;
   }
 
-  .cs-logo {
-    scale: 1.2;
-    margin-left: 3rem;
+  .cs-topper1 {
+  color: #960808;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  
   }
+
   .cs-text {
     margin: 0;
     max-width: 40.625rem;
@@ -221,7 +205,7 @@
   body.dark-mode #dark-mode-toggle .cs-moon {
     opacity: 0;
     transform: translate(-50%, -150%);
-    fill: #000000;
+    fill: #fff;
   }
   #dark-mode-toggle {
     z-index: 1000;
@@ -266,8 +250,6 @@
     transform: none;
     margin: 0;
   }
-
-  
   #dark-mode-toggle:hover {
     cursor: pointer;
   }
@@ -283,8 +265,7 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #4b3737;
-    margin-top: -0.1rem;
+    background-color: #fff;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -298,11 +279,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    background-color: rgb(0, 0, 0);
   }
-
-  
-
   #cs-navigation .cs-logo {
     z-index: 10;
     display: flex;
@@ -361,7 +338,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: #1a1a1a;
     height: 2px;
     width: 100%;
   }
@@ -416,8 +393,6 @@
     padding: 3rem clamp(1.75rem, 3vw, 2.5rem) 2rem 4.375rem;
     gap: 1.25rem;
   }
-
-  
   #cs-navigation .cs-li {
     opacity: 0;
     /* transition from these values */
@@ -595,20 +570,6 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-
-  #cs-navigation {
-    z-index: 10000;
-    position: fixed;
-    background-color: #000000; /* Change to black */
-    width: 100%;
-    /* Prevents padding from affecting height and width */
-    box-sizing: border-box;
-    padding: 0 1.875rem;
-    font-family: "Roboto", "Arial", sans-serif;
-    transition: padding 0.3s, background-color 0.3s;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-  
   #cs-navigation .cs-dropdown {
     position: relative;
   }
@@ -631,7 +592,7 @@
   }
   #cs-navigation .cs-drop-ul {
     z-index: -100;
-    /* If you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
     position: absolute;
     top: 100%;
     visibility: hidden;
@@ -701,7 +662,7 @@
   #cs-navigation .cs-li-link.cs-drop-link {
     display: block;
     width: 100%;
-    /* Prevents padding from affecting height and width */
+    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem;
     white-space: nowrap;
@@ -718,7 +679,6 @@
     display: none;
   }
 }
-
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-navigation .cs-drop-ul {
@@ -1049,7 +1009,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
-    background: #1c1c1c;
+    background: #0b0b0b;
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
   }
@@ -1253,7 +1213,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #footer {
-    background: #111111;
+    background: #171717;
   }
 }
 

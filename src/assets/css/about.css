@@ -60,7 +60,6 @@
   #sbs .cs-right {
     max-width: 33.875rem;
     margin: auto;
-    
   }
   #sbs .cs-topper {
     text-align: left;
@@ -69,7 +68,6 @@
   #sbs .cs-title {
     text-align: left;
     max-width: 50rem;
-    
   }
   #sbs .cs-text {
     text-align: left;
@@ -92,7 +90,7 @@
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0 0 1rem;
-    color: #ffffff;
+    color: #353535;
   }
   #sbs .cs-name {
     font-size: 1rem;
